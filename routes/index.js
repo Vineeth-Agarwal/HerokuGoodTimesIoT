@@ -24,8 +24,8 @@ app.get('/', function (request, response) {
 })
 //  POST  method route
 app.post('/', function (request, response) {
-  console.log("Body:  " + JSON.stringify(request.body)) //  Body:  {"event":"pulse","data":"65","published_at":"2018-11-26","coreid":"ddd"}   
-  console.log("Data:  " + request.body.data)                       //  Data:  65   
+  console.log("Body:  " + JSON.stringify(request.body)) //  Body: {"reactiontime":"most_recent=572&mean=446&range=252"}
+  console.log("Data:  " + request.body.reactiontime)                       //  Data:  65   
   response.send('POST  request  to  the  homepage\n')
 })
 // app.listen(process.env.PORT || 3001, () => console.log('Example  app  listening  on  the port  3001!'))
