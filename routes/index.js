@@ -12,7 +12,7 @@
 
 let express = require('express')
 var bodyParser = require('body-parser')
-let app = express()
+let app = express.Router();
 let url = require('url')
 let querystring = require('querystring')
 app.use(bodyParser.json());
