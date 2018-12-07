@@ -25,8 +25,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 //  for  parsing  application/x-www-form-urlencoded//  GET  method  route
 app.get('/', function (request, response) {
-  response.send('GET  request  to  the  homepage\n '+"most_recent is \n"+most_recent+"min is \n"+ min+"max is \n"+ max
-  +"mean is \n"+ mean+" range is \n"+range)
+  response.send('Following are the details fetched from a GET  request \n '+" most_recent is \n"+most_recent+" min is \n"+ min+" max is \n"+ max
+  +" mean is \n"+ mean+" range is \n"+range)
    most_recent=0;
    min=0;
    max=0;
